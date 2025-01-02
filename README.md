@@ -20,34 +20,20 @@ Follow these steps to set up CP-Tracker on your local machine:
 1. **Clone this repository** to your local machine.
    ```bash
    git clone https://github.com/mwarith/CP-Tracker.git
-  2. **Start XAMPP** and ensure that both Apache and MySQL services are running.
 
-  3. **Navigate to the project directory**:
-    ```bash
-    cd CP-Tracker
-    ```
+  2. **Start the XAMPP control panel** and ensure that both Apache and MySQL services are running.
 
-  4. **Move the project files** to the XAMPP `htdocs` directory:
-    ```bash
-    mv * /c/xampp/htdocs/CP_Tracker/
-    ```
+  3. **Create a database** for CP-Tracker.
+    - Open your web browser and go to `http://localhost/phpmyadmin`.
+    - Click on the "Databases" tab.
+    - Enter `cp_tracker` as the database name and click "Create".
 
-  5. **Import the database**:
-    - Open [phpMyAdmin](http://localhost/phpmyadmin/).
-    - Create a new database named `cp_tracker`.
-    - Import the `cp_tracker.sql` file located in the `database` directory of the project.
+  4. **Import the database schema**.
+    - In phpMyAdmin, select the `cp_tracker` database.
+    - Click on the "Import" tab.
+    - Choose the `cp_tracker.sql` file located in the `CP_Tracker` directory of the project.
+    - Click "Go" to import the schema.
 
-  6. **Configure the database connection**:
-    - Open the `config.php` file in the project directory.
-    - Update the database credentials to match your local setup:
-      ```php
-      define('DB_SERVER', 'localhost');
-      define('DB_USERNAME', 'root');
-      define('DB_PASSWORD', '');
-      define('DB_NAME', 'cp_tracker');
-      ```
-
-  7. **Access the website**:
-    - Open your web browser and navigate to [http://localhost/CP_Tracker](http://localhost/CP_Tracker).
-
-  You should now be able to see the CP-Tracker homepage and start using the application.
+  5. **Access CP-Tracker**.
+    - Open your web browser and go to `http://localhost/CP_Tracker`.
+    - Start tracking your competitive programming progress!
