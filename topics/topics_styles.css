@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9f7e9;
+    /* Light green background */
+    color: #2e4d2e;
+    /* Dark green text */
+}
+
+header {
+    background-color: #3a7c3a;
+    /* Dark green header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    /* Larger tiles, two per row */
+    gap: 30px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.course {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 450px;
+    /* Larger tile width */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.course img {
+    width: 100%;
+    height: 300px;
+    /* Larger image height for more emphasis */
+    object-fit: cover;
+    /* Maintain aspect ratio */
+    border-bottom: 5px solid #3a7c3a;
+    /* Green bottom border */
+}
+
+.details {
+    padding: 25px;
+}
+
+.details h2 {
+    font-size: 1.6rem;
+    /* Larger title font */
+    margin-bottom: 15px;
+    color: #3a7c3a;
+    /* Header text green */
+}
+
+.details p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    /* Slightly larger description */
+    color: #4b6b4b;
+    /* Subtext green */
+}
+
+.details span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #287b28;
+    /* Highlighted green */
+}
+
+/* Hover effect */
+.course:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Link Styling */
+.course a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.course a:hover {
+    color: #1d531d;
+}

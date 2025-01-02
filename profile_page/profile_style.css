@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+    left: 10%;
+    position: relative;
+    width: 85%;
+    height: 90vh;
+    overflow: auto;
+}
+
+.head {
+    text-align: center;
+    width: 200px;
+    height: 80px;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background-color: #555555;
+    margin-left: 50px;
+    margin-top: -10px;
+}
+
+
+
+
+.contents {
+    width: 50%;
+    height: 98%;
+    margin: 5px;
+}
+
+.contents ul li {
+    list-style: none;
+}
+
+.contents h2 {
+    margin: 15px;
+    font-size: 45px;
+    color: rgb(85, 85, 85);
+    
+}
+
+.fa-user,
+.fa-lock,
+.fa-envelope {
+    color: #0000EE;
+    margin-left: 45px;
+}
+
+.fa-gear,
+.fa-star {
+    color: rgb(85, 85, 85);
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.change,
+.level {
+    font-size: 15px;
+    margin-left: 5px;
+    color: #0000EE;
+    line-height: 30px;
+}
+
+.fa-star {
+    margin-bottom: 15px;
+}
+
+.settings,
+.level {
+    margin-left: 3px;
+    line-height: 25px;
+    color: rgb(85, 85, 85);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.upcc {
+    position: relative;
+    width: 100%;
+    height: 45%;
+    border-radius: 55px;
+    border: 1px solid #555555;
+    top: 5%;
+    border-radius: 20px;
+    border: 1px solid #555555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 80%; 
+    max-width: 500px;
+    height: auto; 
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid #555555;
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+}
+
+.ucc1 {
+    position: absolute;
+    width: 100%;
+    height: 26%;
+    border-bottom: 1px solid rgba(85, 85, 85,0.5);
+}
+
+h3 {
+    text-decoration: underline;
+    font-size: 35px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #555555;
+}
+
+.upcc a {
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 80%;
+    font-size: 35px;
+    color: #0000EE;
+    font-size: 17px;
+    text-align: center;
+}
+
+/* ////////////////////////////////////////////////////////////////////////
+   ////////////////////////////////////////////////////////////////////////
+   ////////////////////////////////////////////////////////////////////////
+*/
+
+.setting-container {
+    position: relative;
+    left: 5%;
+    top: 5vh;
+    width: 90%;
+    height: 90vh;
+}
+
+.setting-frame {
+    position: absolute;
+    width: 42%;
+    height: 90%;
+    top: 5%;
+    left: 29%;
+    border: 1px solid #555555;
+    border-radius: 50px;
+    background-image: linear-gradient(to right bottom, rgba(25, 121, 25, 0.2), rgba(48, 141, 54, 0.2), rgba(68, 161, 80, 0.2), rgba(87, 182, 106, 0.2), rgba(107, 203, 132, 0.2), rgba(87, 202, 154, 0.2), rgba(75, 199, 172, 0.2), rgba(76, 195, 186, 0.2), rgba(79, 165, 180, 0.2), rgba(95, 135, 156, 0.2), rgba(99, 108, 122, 0.2), rgba(85, 85, 85, 0.2));
+}
+
+.frame-head {
+    position: absolute;
+    width: 40%;
+    height: 15%;
+    left: 30%;
+}
+
+.frame-name {
+    position: absolute;
+    color: #555555;
+    font-size: 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frame-line {
+    position: absolute;
+    left: 32%;
+    bottom: 18%;
+    width: 36%;
+    height: 2px;
+    background-color: #555555;
+}
+
+.box {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 20%;
+    left: 10%;
+}
+
+.username-label,
+.password-label,
+.email-label,
+.colon {
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    font-weight: bold;
+    color: #555555;
+    font-size: 25px;
+}
+
+.colon {
+    left: 30%;
+}
+
+.password-label,
+.colon2 {
+    top: 25%;
+}
+
+.email-label,
+input[type="email"],
+.colon3 {
+    top: 40%;
+}
+
+input[type="text"] {
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    border-radius: 6px;
+    height: 28px;
+    width: 60%;
+    border: 0;
+}
+
+.password1 {
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    border-radius: 6px;
+    height: 28px;
+    width: 60%;
+    border: 0;
+}
+
+input[type="email"] {
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    border-radius: 6px;
+    height: 28px;
+    width: 60%;
+    border: 0;
+}
+
+input::placeholder {
+    color: rgba(85, 85, 85, 0.4);
+    font-style: italic;
+    font-size: 11px;
+    padding-left: 5px;
+}
+
+.save,
+.cancel {
+    position: absolute;
+    bottom: 5%;
+    width: 20%;
+    height: 6%;
+    font-size: 15px;
+    font-weight: bold;
+    color: #555555;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.save {
+    left: 27%;
+}
+
+.cancel {
+    right: 27%;
+}
+
+.save:hover,
+.cancel:hover {
+    opacity: 0.7;
+}
+
+.check-line {
+    position: absolute;
+    width: 70%;
+    height: 1px;
+    background-color: #555555;
+    left: 15%;
+    top: 55%;
+}
+
+.submit-p {
+    position: absolute;
+    font-size: 20px;
+    width: 80%;
+    top: 65%;
+    left: 10%;
+    text-align: center;
+    color: #555555;
+}
+
+.password2 {
+    position: absolute;
+    left: 15%;
+    top: 75%;
+    border-radius: 6px;
+    height: 28px;
+    width: 70%;
+    border: 0;
+}
+
+/* .submit-edit{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background-color: #fff;
+    left: 35%;
+    top: 35%;
+    border-top-right-radius: 6px;
+    border: 2px solid #555555;
+}
+.xmark{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: red;
+    border: 0;
+    border-radius: 4px;
+    right: 0;
+
+    border-left: 2px solid #555555;
+    border-bottom: 2px solid #555555;
+}
+.fa-xmark{
+    color: white;
+    font-size: 30px;
+}
+.submit-p{
+    position: absolute;
+    font-size: 18px;
+    width: 80%;
+    top: 20%;
+    left: 10%;
+    text-align: center;
+} */

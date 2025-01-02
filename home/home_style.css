@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+nav .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+nav .logout {
+    color: red;
+}
+
+.search-bar {
+    margin-left: 10px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.home-content {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.home-content h1 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.news-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.news-section h2 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.news-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+.add-news{
+    align-items: center;
+}
+
+.add-news form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-news form button {
+    background-color: #007BFF;
+    /* align : center; */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-news form button:hover {
+    background-color: #0056b3;
+}
+
+.add-news form button:active {
+    background-color: #004085;
+}

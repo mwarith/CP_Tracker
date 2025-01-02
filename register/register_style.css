@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#the_whole_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f9f9f9; /* Light background for a clean look */
+}
+
+#Container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.342); /* Soft shadow */
+    border-radius: 15px; /* Rounded corners */
+    padding: 70px 50px 70px 50px; /* Padding for inner content */
+    width: 500px; /* Restrict width for better layout */
+    gap: 20px; /* Spacing between child elements */
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #45a049;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
+    font-size: 16px;
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -10px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.slider-labels span {
+    display: inline-flex;
+    text-align: justify;
+    justify-content: space-between;
+    width: 33%;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+#login-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#login-link:hover {
+    text-decoration: underline;
+}
